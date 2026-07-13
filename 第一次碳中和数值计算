@@ -1,0 +1,66 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "17e849e1-014e-4b68-ad26-69c2b70a5b8a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "该企业本月因外购电力产生的碳排放为：2.85 吨CO2\n",
+      "========================================\n",
+      "碳核算完成！\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 计算一家小型企业某月的碳排放（Scope 2：外购电力）\n",
+    "# 这是你的第一个\"碳中和+Python\"代码\n",
+    "\n",
+    "# 1. 定义变量\n",
+    "monthly_electricity_kwh = 50000  # 月用电量：50000度\n",
+    "grid_emission_factor = 0.5703    # 电网排放因子（吨CO2/万度），中国2024年默认值\n",
+    "\n",
+    "# 2. 计算碳排放量\n",
+    "co2_emission = monthly_electricity_kwh * grid_emission_factor / 10000\n",
+    "\n",
+    "# 3. 输出结果\n",
+    "print(f\"该企业本月因外购电力产生的碳排放为：{co2_emission:.2f} 吨CO2\")\n",
+    "print(\"=\" * 40)\n",
+    "print(\"碳核算完成！\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "00a25952-7714-4e9b-9d10-a8209be1b237",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
